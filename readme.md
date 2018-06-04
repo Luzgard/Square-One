@@ -1,3 +1,64 @@
+# Web Crawler - Square One
+
+Using the web crawler Goutte for Laravel Framework, this application gets content of the website page "https://www.appliancesdelivered.ie/dishwashers" and displays all dishwashers.
+It allows you to add any article to your own wishlist, only if you are logged.
+Finally, you have an access to your wishlist, and have the possibility to remove one of your wish from this page.
+
+## Requirements
+
+This project needs some requirements :
+
+```
+  - Git
+  - Composer
+  - PHP Version : 7.0.10 minimum
+```
+
+## Configuration and instructions
+Download the ZIP or clone your repository with the following command :
+
+`git clone https://github.com/Luzgard/Square-One.git projectname`
+
+Using the command prompt, go to your project folder :
+
+`cd path_to/projectname`
+
+Install all dependencies with Composer :
+
+`composer update`
+ 
+Rename .env.example to .env :
+ 
+`php -r "file_exists('.env') || copy('.env.example', '.env');"`
+ 
+Generate the .env key :
+ 
+`php artisan key:generate`
+ 
+Create a database (for example 'web_crawler') and inform .env file :
+ 
+```
+DB_CONNECTION=mysql       // Type of connection
+DB_HOST=127.0.0.1         // Host
+DB_PORT=3306              // Port
+DB_DATABASE=web_crawler   // Database name
+DB_USERNAME=root          // Username
+DB_PASSWORD=secret        // Password
+```
+
+Migrate the database structure :
+
+`php artisan migrate`
+
+Seed the database :
+
+`php artisan db:seed`
+
+
+Your project is ready. If you are locally hosting this project (like WAMP/MAMP etc...), go to this url address :
+
+ `localhost:port/projectname/public`
+ 
 <p align="center">
   <img src="https://laravel.com/assets/img/components/logo-laravel.svg">
 </p>
@@ -23,11 +84,6 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
 ## Laravel Sponsors
 
@@ -46,14 +102,6 @@ We would like to extend our thanks to the following sponsors for helping fund on
 - [Pulse Storm](http://www.pulsestorm.net/)
 - [Runtime Converter](http://runtimeconverter.com/)
 - [WebL'Agence](https://weblagence.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
