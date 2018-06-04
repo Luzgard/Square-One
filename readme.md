@@ -59,6 +59,10 @@ Your project is ready. If you are locally hosting this project (like WAMP/MAMP e
 
  `localhost:port/projectname/public`
   
+## Login to existing account
+`Mail adress : contact@squareone.com`
+
+`Password : Squ@re`
 
 <p align="center">
   <img src="https://laravel.com/assets/img/components/logo-laravel.svg">
