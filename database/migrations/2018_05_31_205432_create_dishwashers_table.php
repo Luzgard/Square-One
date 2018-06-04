@@ -17,7 +17,7 @@ class CreateDishwashersTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->double('price', 8, 2);
-            $table->string('image');
+            $table->text('image');
             $table->timestamps();
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')
