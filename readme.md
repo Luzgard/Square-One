@@ -58,7 +58,8 @@ Seed the database :
 Your project is ready. If you are locally hosting this project (like WAMP/MAMP etc...), go to this url address :
 
  `localhost:port/projectname/public`
- 
+  
+
 <p align="center">
   <img src="https://laravel.com/assets/img/components/logo-laravel.svg">
 </p>
